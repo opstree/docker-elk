@@ -83,8 +83,6 @@ services:
         target: /usr/local/apache2/entrypoint.sh
     ports:
       - "80:80"
-    entrypoint:
-      - /usr/local/apache2/entrypoint.sh
     networks:
       - elk
 
