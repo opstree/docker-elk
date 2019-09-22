@@ -23,3 +23,8 @@ output.elasticsearch:
   hosts: ["elasticsearch:9200"]
   username: "elastic"
   password: "elastic"
+
+setup.kibana:
+  host: "kibana:5601"
+  username: "elastic"
+  password: "elastic" 
