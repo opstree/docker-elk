@@ -4,4 +4,10 @@ set -ex
 sleep 15
 service filebeat start
 
-service apache2 start || true
+if ! service apache2 start
+then
+    echo "started"
+else
+    echo "started"
+fi
+

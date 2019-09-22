@@ -79,10 +79,6 @@ services:
         target: /var/www/html/index.html
         read_only: true
       - type: bind
-        source: ./apache/000-default.conf
-        target: /etc/apache2/sites-enabled/000-default.conf
-        read_only: true
-      - type: bind
         source: ./apache/entrypoint.sh
         target: /app/entrypoint.sh
     ports:
