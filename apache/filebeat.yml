@@ -1,0 +1,25 @@
+filebeat.inputs:
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/apache2/access.log
+    - /var/log/apache2/error.log
+  fields:
+    type: logs
+    server: dummy-apache-server1
+    index_name: web
+  fields_under_root: true
+
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+  
+setup.template.settings:
+  index.number_of_shards: 1
+
+#----------------------------- Logstash output --------------------------------
+output.elasticsearch:
+  hosts: ["elasticsearch:5044"]
+  username: "elastic"
+  password: "elastic"
