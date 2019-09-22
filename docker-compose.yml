@@ -79,7 +79,7 @@ services:
         target: /var/www/html/index.html
         read_only: true
       - type: bind
-        source: ./ot-go-webapp/entrypoint.sh
+        source: ./apache/entrypoint.sh
         target: /app/entrypoint.sh
     ports:
       - "80:80"
