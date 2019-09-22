@@ -76,8 +76,13 @@ services:
         read_only: true
       - type: bind
         source: ./apache/index.html
-        target: /usr/local/apache2/htdocs/index.html
+        target: /var/www/html/index.html
         read_only: true
+      - type: bind
+        source: ./apache/entrypoint.sh
+        target: /app/entrypoint.sh
+    entrypoint:
+      - ./entrypoint.sh
     ports:
       - "80:80"
     networks:
