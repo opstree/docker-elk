@@ -4,4 +4,4 @@ set -ex
 sleep 15
 service filebeat start
 
-httpd-foreground
+/usr/local/bin/httpd-foreground
