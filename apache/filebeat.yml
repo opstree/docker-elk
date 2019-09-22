@@ -20,6 +20,6 @@ setup.template.settings:
 
 #----------------------------- Logstash output --------------------------------
 output.elasticsearch:
-  hosts: ["elasticsearch:5044"]
+  hosts: ["elasticsearch:9200"]
   username: "elastic"
   password: "elastic"
