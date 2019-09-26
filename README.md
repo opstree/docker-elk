@@ -71,7 +71,7 @@ docker-compose down -v
 
 After this steps, now you can go and login into kibana and visualize your logs:-
 
-- Kibana Url:- http://<your_ip>:5601
+- Kibana Url:- *http://<your_ip>:5601*
 - Username:- elastic
 - Password:- elastic
 
