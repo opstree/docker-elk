@@ -1,5 +1,4 @@
- 
-version: '3.2'
+ version: '3.2'
 
 services:
   elasticsearch:
@@ -38,6 +37,10 @@ services:
         source: ./logstash/conf.d
         target: /usr/share/logstash/pipeline
         read_only: true
+      - type: bind
+        source: ./logstash/logstash-apache.json
+        target: /var/log-template/logstash-apache.json
+        read_only: true
     ports:
       - "5000:5000"
       - "5044:5044"
@@ -48,7 +51,6 @@ services:
       - elk
     depends_on:
       - elasticsearch
-
 
   kibana:
     build:
