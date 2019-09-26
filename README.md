@@ -4,7 +4,7 @@ The main goal for creating this stack was to provide the environment of ELK(Elas
 
 In the end result you will get a beautiful kibana dashboard like this:-
 
-[](./img/kibana-overview.png)
+![](./img/kibana-overview.png)
 
 We are using the official image from Elastic:-
 
