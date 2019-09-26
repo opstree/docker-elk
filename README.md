@@ -8,9 +8,9 @@ In the end result you will get a beautiful kibana dashboard like this:-
 
 We are using the official image from Elastic:-
 
-- [Elasticsearch](https://github.com/elastic/elasticsearch/tree/master/distribution/docker)
-- [Kibana](https://github.com/elastic/kibana/tree/master/src/dev/build/tasks/os_packages/docker_generator)
-- [Logstash](https://github.com/elastic/logstash/tree/master/docker)
+- **[Elasticsearch](https://github.com/elastic/elasticsearch/tree/master/distribution/docker)**
+- **[Kibana](https://github.com/elastic/kibana/tree/master/src/dev/build/tasks/os_packages/docker_generator)**
+- **[Logstash](https://github.com/elastic/logstash/tree/master/docker)**
 
 This compose setup will setup these things for you:-
 
