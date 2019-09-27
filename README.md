@@ -78,3 +78,15 @@ After this steps, now you can go and login into kibana and visualize your logs:-
 ## To Do
 - [ ] Add some dashboards for Apache
 - [ ] Create a canvas for logs
+
+## Kibana Dashboards
+
+You can import the kibana dashboard as well which is [here](./kibana/dashboards/apache.ndjson)
+
+Here are some awesome screenshots you will get after importing the dashboard.
+
+![](./img/kibana-map.png)
+
+![](./img/kibana-gauge.png)
+
+![](./img/kibana-data.png)
