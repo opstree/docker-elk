@@ -1,0 +1,21 @@
+{
+    "variables": {
+        "ssh_username": "packer",
+        "ssh_password": "packer"
+    },
+    "builders": [{
+        "type": "virtualbox-ovf",
+        "source_path": "/home/code/Documents/Ubuntu.ova",
+        "checksum": "md5:ff81d8f71a2455cbd4d2a4ab0187254b",
+        "ssh_username": "oacker",
+        "ssh_password": "packer",
+        "shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
+    }],
+    "provisioners": [{
+        "type": "shell",
+        "inline": [
+            "sudo apt-get upgrade -y",
+            "sudo apt-get install nginx -y"
+        ]
+    }]
+}
